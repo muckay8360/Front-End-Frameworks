@@ -1,0 +1,12 @@
+<div class="main">
+  <h1>Message to Display</h1>
+  <input
+  #newItem
+  placeholder="Message to Display"
+  (keyup.enter)="addItem(newItem.value); newItem.value = ''"
+  class="lg-text-input"
+  id="addItemInput" />
+  <button class="btn-primary" (click)="setitem(newItem.value)">Display Message</button>
+  <h2>{{this.myitem}}</h2>
+  
+  </div>
